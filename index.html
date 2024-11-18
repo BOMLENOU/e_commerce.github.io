@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header id="head">
+            <div class="logo">
+
+            
+                <div id="name"> 
+                <img src="img_index/Customer.png" alt="custumer" srcset="">
+                </div> 
+            </div>     
+            <div class="head-bar">
+                
+                    <div id="search-bar">
+                        <input type="text" id="search-input" placeholder="Rechercher un produit...">
+                        <button id="search-button">Rechercher</button>
+                    </div>
+                    
+            </div>
+             
+            <div id="nav">
+                <div id="menu-burger">&#9776;</div>
+            <nav>
+                 <ul>
+                     <a href="file:///C:/Users/USER/Desktop/IUT/vip/cv%20en%20ligne/site%20films/e-commerceNEW.html">Home</a> 
+                     <a href="#cloths">Vetements</a> 
+                    <a href="#choes">Chaussures</a> 
+                    <a href="#acc">Accessoires </a> 
+                    <a href="#Mode">  Mode</a>
+                     <a href="#elect">Electronique</a> 
+                     <a href="#about">About</a> 
+                     <a href="#CONTACT">Contact </a> 
+                    <span></span>
+                 
+                </ul>
+            </nav>
+            </div>
+            <div class="form-container" style="justify-items: right;">
+                <form id="languageForm" style="opacity: 0.4;">
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="all">Allemand</option>
+                    </select>
+                </form>
+            </div>    
+        </header>
+        
+    </header>
+    <section id="caroussel">
+        <div id="carousel" style="height:auto">
+            <div class="carousel-container">
+                <div class="slides"><video   autoplay loop muted   width="100%">
+                    <source src="imgproducts/expo.mp4" type="video/mp4"></video>
+                </div>  
+                <div class="slides"><img src="imgproducts/article1.jpg" alt="Image 1"></div>
+                <div class="slides"><img src="imgproducts/vet6.jpg" alt="Image 2"></div>
+                <div class="slides"><img src="imgproducts/a.jpg" alt="Image 4"></div>
+                <div class="slides"><img src="imgproducts/article2.jpg" alt="Image 5"></div>
+                <div class="slides"><img src="imgproducts/elect1.jpg" alt="Image 6"></div>
+                <div class="slides"><img src="imgproducts/sac.jpg" alt="Image 7"></div>
+                <div class="slides"><img src="imgproducts/montre.jpg " alt="Image 8"></div>
+                <div class="slides"><img src="imgproducts/ch10.jpg" alt="Image 9"></div>
+                <div class="slides"><img src="imgproducts/elect2.jpg" alt="Image 10"></div>
+                <div class="slides"><img src="imgproducts/article5.jpg" alt="Image 11"></div>
+            </div>  
+            <p class="carousel-button prev"> < </p>
+            <p class="carousel-button next"> > </p> 
+        </div>
+        
+    </section>
+<div   >
+    <div id="cart"> 
+        <a href="#cart-details"><img src="img_index/panier.png" alt=""></a><br>  
+        
+         <span id="cart-count" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">0 </span>  article(s)
+        
+    </div>
+        
+       
+    <br>
+    <br> 
+
+    <section id="cloths" style="margin : 0 90px 0 70px;" >
+        <h2>Vetements&nbsp; <a href=""><img src="img_index/more.png" alt="" style="height: 15px;background-color: blue;border-radius: 20px;color: yellow;"></a></h2>
+        <div class="product-grid">
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet1.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="2" data-name="Survet casa de Papel" data-price="50">
+                        <div class="card">
+                            <img src="imgproducts/survet.jpg" alt="">
+                            <div>
+                                <h3>Survet casa de Papel </h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet3.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Pantalon cargo" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet4.jpg" alt="">
+                            <div>
+                                <h3>Pantalon cargo</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet5.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet6.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet7.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet9.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/vet8.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+
+        </div>  
+    </section>
+<br>
+    <section id="choes" style="margin : 0 90px 0 70px;" >
+        <h2>Chaussures&nbsp; <a href=""><img src="img_index/more.png" alt="" style="height: 15px;background-color: blue;border-radius: 20px;color: yellow;"></a></h2> 
+            <div class="product-grid">
+
+                    <div class="product" data-id="1" data-name="tennis samba" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/ch1.jpg" alt="">
+                            <div>
+                                <h3>Tennis Samba</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="sebago geogra" data-price="30">
+                            <div class="card">
+                                <img src="imgproducts/ch2.jpg" alt="">
+                                <div>
+                                    <h3>Sebago geogra</h3>
+                                    <p>Prix: 30€</p>
+                                    <button class="add-to-cart">Ajouter au panier</button>
+                                </div>   
+                            </div>   
+                    </div>
+
+                    <div class="product" data-id="2" data-name="tennis nike air" data-price="50">
+                            <div class="card">
+                                <img src="imgproducts/ch3.jpg" alt="">
+                                <div>
+                                    <h3>Tennis NIKE </h3>
+                                    <p>Prix: 30€</p>
+                                    <button class="add-to-cart">Ajouter au panier</button>
+                                </div>   
+                            </div>   
+                    </div>
+                    
+                    <div class="product" data-id="3" data-name=" " data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch4.jpg" alt="">
+                            <div>
+                                <h3> </h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch5.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Bottine" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch7.jpg" alt="">
+                            <div>
+                                <h3>Bottine</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch8.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch9.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch6.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="barbouche" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/ch11.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+            </div>       
+    </section>
+<br>
+    <section id="acc" style="margin : 0 90px 0 70px;" >
+        <h2>accessoires&nbsp; <a href=""><img src="img_index/more.png" alt="" style="height: 15px;background-color: blue;border-radius: 20px;color: yellow;"></a></h2>
+            <div class="product-grid">
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/acc1.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                            <div class="card">
+                                <img src="imgproducts/acc3.jpg" alt="">
+                                <div>
+                                    <h3>Produit 1</h3>
+                                    <p>Prix: 30€</p>
+                                    <button class="add-to-cart">Ajouter au panier</button>
+                                </div>   
+                            </div>   
+                    </div>
+
+                    <div class="product" data-id="2" data-name="Produit 2" data-price="50">
+                        <div class="card">
+                            <img src="imgproducts/acc6.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/acc5.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/acc7.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/a.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/montre.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/montr1.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+            </div>       
+    </section>
+<br>
+    <section id="Mode" style="margin : 0 90px 0 70px;" >
+        <h2>MODE&nbsp; <a href=""><img src="img_index/more.png" alt="" style="height: 15px;background-color: blue;border-radius: 20px;color: yellow;"></a></h2>
+            <div class="product-grid">
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/acc1.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                            <div class="card">
+                                <img src="imgproducts/acc3.jpg" alt="">
+                                <div>
+                                    <h3>Produit 1</h3>
+                                    <p>Prix: 30€</p>
+                                    <button class="add-to-cart">Ajouter au panier</button>
+                                </div>   
+                            </div>   
+                    </div>
+
+                    <div class="product" data-id="2" data-name="Produit 2" data-price="50">
+                        <div class="card">
+                            <img src="imgproducts/acc6.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/acc5.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/acc7.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/a.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/montre.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/montr1.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="jacket sans manche" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/vet2.jpg" alt="">
+                            <div>
+                                <h3>jacket sans manche</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+            </div>       
+    </section>
+<br>
+    <section id="elect" style="margin : 0 90px 0 70px;" >
+        <h2>APPAREILS a la pointe de la tech&nbsp; <a href=""><img src="img_index/more.png" alt="" style="height: 15px;background-color: blue;border-radius: 20px;color: yellow;"></a></h2>
+            <div class="product-grid">
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                  <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                            <div class="card">
+                                <img src="imgproducts/" alt="">
+                                <div>
+                                    <h3>Produit 1</h3>
+                                    <p>Prix: 30€</p>
+                                    <button class="add-to-cart">Ajouter au panier</button>
+                                </div>   
+                            </div>     
+                    </div>
+
+                    <div class="product" data-id="2" data-name="Produit 2" data-price="50">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+                    
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/a.jpg" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+
+                    <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>     
+                </div>
+
+                <div class="product" data-id="1" data-name="Produit 1" data-price="30">
+                    <div class="card">
+                        <img src="imgproducts/" alt="">
+                        <div>
+                            <h3>Produit 1</h3>
+                            <p>Prix: 30€</p>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>   
+                    </div>     
+            </div>
+
+                    <div class="product" data-id="3" data-name="Produit 3" data-price="20">
+                        <div class="card">
+                            <img src="imgproducts/" alt="">
+                            <div>
+                                <h3>Produit 1</h3>
+                                <p>Prix: 30€</p>
+                                <button class="add-to-cart">Ajouter au panier</button>
+                            </div>   
+                        </div>   
+                    </div>
+            </div>       
+    </section>
+
+</div>
+ <br>
+    <section id="cart-details"> 
+        <h2>Votre Panier</h2>
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                 
+            </tbody>
+        </table>
+        <p>Total : <span id="cart-total">0</span>€</p>
+    </section>
+    
+
+    <section id="checkout">
+        <h2>Paiement & Livraison</h2>
+            
+        <form id="checkout-form">
+            <div class="content-grid"  >
+                <div class="card"> 
+                        <label style="margin: 20px;" for="payment-method">Moyen de Paiement </label>
+                        <div class="payment-img"  >
+                            <img src="img_index/mastercard.jpg" alt="">
+                            <img src="img_index/paypal.jpg" alt="">
+                            <img src="img_index/visa.jpg" alt="">
+                            <img src="img_index/mtn.jpg" alt="">
+                            <img src="img_index/oran.jpg" alt="">
+                        </div>
+                </div>
+
+                <div class="card" style="margin: 10px;">
+                        <label style="margin: 10px;" for="delivery-location">Adresse de Livraison:</label>
+                        <input type="text" id="delivery-location" required placeholder="Region/Ville/Quartier">
+                        <br>
+                        <label style="margin: 10px;" for="phone">Telephone du destinataire :</label>
+                        <input type="tel" id="phone" required pattern="[0-9]+" >
+                </div>
+            </div>
+            <button type="submit">Valider la Commande</button>
+        </form>
+    </section>
+    <br>
+    <br>
+    <section id="about">
+        <h3 style="font-size: large;">ABOUT</h3>
+         
+            <hr width="300px">
+            <br>
+            <br>
+        <div class="Contact_us">
+
+            <div class="product1" >
+                        <h3>A PROPOS DE L'ENTREPRISE</h3>
+                        <br>
+                        <div class="list">
+                            <a href=""><p>Politique </p></a><br>
+                            <a href=""><p>Condition de confidentialite </p></a><br>
+                            <a href=""><p>En savoir plus</p></a>
+                        </div>  
+            </div>
+
+            <div class="product1" >
+                <h3>AIDE</h3>
+                <br>
+                <div class="list" >
+                    
+                    <p>Comment passer une commade </p>
+                    <p>Retourner une commande</p>
+                    <p>Suivez votre commade </p>
+                    <p>Information sur la livraison </p>
+                </div> 
+            </div>
+
+            <div class="product1" >
+                <h3>AVANTAGES</h3>
+                <br>
+                <div class="list">
+                    <p>Livraison  </p>
+                    <p>Retour gratuit  </p>
+                    <p>Droit de retour 30jours</p>
+                    <p>Acheter des cartes cadeaux </p>
+                            <p>Utiliser une  carte cadeau </p>
+                            <p>Cartes cadeaux d'entreprise </p>
+                </div>  
+            </div>
+
+            <div class="product1" >
+                <h3>LIENS</h3>
+                <br>
+                <div class="list">
+                    <a href="">  <p>https://.............  </p></a>
+                    <a href=""> <p>https://.............  </p></a>
+                    <a href=""><p>https://.............  </p></a>
+                </div>  
+            </div>
+                
+        </div>
+
+</section> 
+    
+                
+           
+    <script src="script.js"></script>
+     <br>
+    <br>
+    <br>
+<section id="CONTACT"  style="position: relative;">
+    
+    
+    <h3>
+        <div class="animated-word">
+            <span><div class="letter">C</div></span> 
+            <span><div class="letter">O</div></span> 
+            <span><div class="letter">N</div></span>
+            <span><div class="letter">T</div></span>
+            <span><div class="letter">A</div></span>
+            <span><div class="letter">C</div></span>
+            <span><div class="letter">T</div></span>
+            <span><div class="letter"><img src="img_index/ecoute.png" alt=""></div></span>
+          
+        </div>
+    </h3>
+    <hr width="300px">
+    <br>
+    <br>
+    
+    <div class="contacts"  >    
+        <div class="lang_up"   >
+                <div class="up " style="width: 20px; ;">
+                    <a href="#head"><button type="button" style="margin: 0;color: green;background-color: yellow;position: relative;left: 50%;">^</button></a>
+                </div> 
+                <div id="contener" > 
+                    <a href=""><div class="card1"><img src="img_index/mail.jpg" alt=""></div></a>
+                    <a href=""><div class="card1"> <img src="img_index/face.png" alt=""></div></a>
+                    <a href="https://wa.me/237680759985"><div class="card1"><img src="img_index/WhatsApp.png" alt=""></div></a>
+                    <a href=""><div class="card1"><img src="img_index/x.png" alt=""></div></a>
+                    
+                </div>
+                </div> <div class="forms"> 
+            <form action="">  
+                <label for="name2">Nom :</label>
+                    <input type="text" id="name2" required placeholder="Veuillez entrez votre nom">
+        
+                <label for="email">Email :</label>
+                <input type="email" id="email"required placeholder="Veuillez entrez votre email">
+
+                <label for="comments">Comments :</label>
+              <input type="text" id="comments" placeholder="Veuillez laissez un commentaire" style=" width: 200px;" > 
+               
+        
+              <button type="submit" onclick="registerUser()">SEND</button>
+            </form>
+            <script>
+                function registerUser() {
+                    var username = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var comments = document.getElementById('comments').value;
+        
+                    // Simulation du stockage côté serveur
+                    var users = JSON.parse(localStorage.getItem('users')) || [];
+                    users.push({ username: name, email: email, comments: comments });
+                    localStorage.setItem('users', JSON.stringify(users));
+        
+                    alert('Requette envoyée !');
+                }
+            </script>
+        </div>   
+
+    </div>     
+</section>
+
+<footer>
+    <p>&copy; 2024   <span style="color:  green;">J</span><span style="color: red;">D</span> <span style="color: yellow;">shop</span></p>
+</footer>
+
+  
+</body>
+</html>
+
+ 
